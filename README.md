@@ -1,6 +1,6 @@
 # Jenkins CI/CD Pipeline for Java Applications with Kubernetes, Helm, SonarQube, and Argo CD
 
-pipeline.png
+Pipeline.png
 
 This repository provides a comprehensive Jenkins CI/CD pipeline for Java-based applications, demonstrating an end-to-end automated workflow from code commit to production deployment. It integrates popular tools such as **Maven** for building, **SonarQube** for code quality analysis, **Helm** for packaging, **Kubernetes** for orchestration, and **Argo CD** for GitOps-driven continuous delivery.
 
