@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <script src="{{ url_for('static', filename='timer.js') }}" defer></script>
+    <style>
+        body { text-align: center; padding-top: 100px; }
+        h1 { font-size: 3rem; }
+        #timer { font-size: 4rem; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Pomodoro Timer</h1>
+    <div id="session-type">Work Session</div>
+    <div id="timer">25:00</div>
+    <button id="start-btn">Start</button>
+    <button id="reset-btn">Reset</button>
+</body>
+</html>
