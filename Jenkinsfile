@@ -7,9 +7,20 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
+        stage('Clone') {
             steps {
                 checkout scm
+            }
+        }
+
+        stage('Install Dependencies & Test') {
+            steps {
+                sh '''
+                python3 -m venv venv
+                source venv/bin/activate
+                pip install -r requirements.txt
+                pytest --maxfail=1 --disable-warnings -q
+                '''
             }
         }
 
